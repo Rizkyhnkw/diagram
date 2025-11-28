@@ -1,189 +1,112 @@
-<mxfile host="app.diagrams.net">
-    <diagram name="Research Model" id="x5nifbOcN7b8T0h7y2bK">
-        <mxGraphModel dx="1426" dy="881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                
-                <!-- Title -->
-                <mxCell id="title" value="RESEARCH MODEL - Incremental ETL Pipeline Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="300" y="20" width="400" height="40" as="geometry"/>
-                </mxCell>
-                
-                <!-- Data Warehouse System -->
-                <mxCell id="dw_system" value="Data Warehouse Processing System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-                    <mxGeometry x="350" y="80" width="300" height="60" as="geometry"/>
-                </mxCell>
-                
-                <!-- Business Questions Section -->
-                <mxCell id="business_section" value="Business Questions / IS Research Field" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-                    <mxGeometry x="100" y="170" width="350" height="200" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="business_label" value="Business Questions:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="business_section">
-                    <mxGeometry x="20" y="30" width="120" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="q1" value="• Mengapa pemrosesan data warehouse lambat?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
-                    <mxGeometry x="30" y="55" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="q2" value="• Faktor-faktor apa yang mempengaruhi kinerja ETL?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
-                    <mxGeometry x="30" y="75" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="q3" value="• Bisakah proses ETL dioptimasi?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
-                    <mxGeometry x="30" y="95" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="q4" value="• Bagaimana mengoptimasi pemrosesan incremental?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
-                    <mxGeometry x="30" y="115" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <!-- RQ 1 -->
-                <mxCell id="rq1" value="RQ 1: Identifikasi Faktor Kinerja ETL" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                    <mxGeometry x="200" y="400" width="200" height="80" as="geometry"/>
-                </mxCell>
-                
-                <!-- RQ 1 Answer -->
-                <mxCell id="rq1_answer" value="Faktor-faktor Kinerja:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="450" y="380" width="100" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="factor1" value="x1 - Data Volume Growth" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="405" width="150" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="factor2" value="x2 - Update Frequency" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="425" width="150" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="factor3" value="x3 - Transformation Complexity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="445" width="150" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="factor4" value="x4 - Resource Utilization" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="465" width="150" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="factor_n" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="485" width="150" height="20" as="geometry"/>
-                </mxCell>
-                
-                <!-- Technology Questions Section -->
-                <mxCell id="tech_section" value="Technology Questions / CS Research Field" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-                    <mxGeometry x="500" y="170" width="350" height="200" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tech_label" value="Technology Questions:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="tech_section">
-                    <mxGeometry x="20" y="30" width="140" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tq1" value="• Dapatkah Incremental ETL mengatasi faktor ini?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
-                    <mxGeometry x="30" y="55" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tq2" value="• Teknik apa yang efektif untuk setiap faktor?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
-                    <mxGeometry x="30" y="75" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tq3" value="• Bagaimana implementasi pipeline optimal?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
-                    <mxGeometry x="30" y="95" width="280" height="20" as="geometry"/>
-                </mxCell>
-                
-                <!-- RQ 2 -->
-                <mxCell id="rq2" value="RQ 2: Evaluasi Teknik Incremental ETL" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                    <mxGeometry x="200" y="550" width="200" height="80" as="geometry"/>
-                </mxCell>
-                
-                <!-- RQ 2 Answer -->
-                <mxCell id="rq2_answer" value="Pemetaan Teknik Optimasi:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="450" y="530" width="130" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tech1" value="x1 → y1 - Change Data Capture (CDC)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="555" width="200" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tech2" value="x2 → y2 - Micro-batch Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="575" width="200" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tech3" value="x3 → y3 - Incremental Transformation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="595" width="200" height="20" as="geometry"/>
-                </mxCell>
-                
-                <mxCell id="tech_n" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="615" width="200" height="20" as="geometry"/>
-                </mxCell>
-                
-                <!-- RQ 3 -->
-                <mxCell id="rq3" value="RQ 3: Analisis Kinerja &amp; Optimasi" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                    <mxGeometry x="200" y="700" width="200" height="80" as="geometry"/>
-                </mxCell>
-                
-                <!-- Final Output -->
-                <mxCell id="output" value="Optimized Data Warehouse Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-                    <mxGeometry x="350" y="820" width="300" height="60" as="geometry"/>
-                </mxCell>
-                
-                <!-- Arrows/Connections -->
-                <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="dw_system" target="business_section">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="140" as="sourcePoint"/>
-                        <mxPoint x="550" y="90" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="business_section" target="rq1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="270" y="370" as="sourcePoint"/>
-                        <mxPoint x="300" y="400" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq1" target="rq2">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="300" y="480" as="sourcePoint"/>
-                        <mxPoint x="300" y="550" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq2" target="rq3">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="300" y="630" as="sourcePoint"/>
-                        <mxPoint x="300" y="700" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq3" target="output">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="400" y="780" as="sourcePoint"/>
-                        <mxPoint x="500" y="820" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn6" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="rq1" target="factor1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="400" y="440" as="sourcePoint"/>
-                        <mxPoint x="450" y="415" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn7" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="tech_section" target="rq2">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="600" y="370" as="sourcePoint"/>
-                        <mxPoint x="400" y="590" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                
-                <mxCell id="conn8" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="rq2" target="tech1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="400" y="590" as="sourcePoint"/>
-                        <mxPoint x="450" y="565" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0" version="29.2.1">
+  <diagram name="Research Model" id="x5nifbOcN7b8T0h7y2bK">
+    <mxGraphModel dx="595" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="RESEARCH MODEL - Incremental ETL Pipeline Optimization" vertex="1">
+          <mxGeometry height="40" width="400" x="230" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;&lt;b&gt;Sejumlah faktor yang&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;menghambat skalabilitas&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="180" x="430" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-3" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x1 - Data Volume Growth" vertex="1">
+          <mxGeometry height="30" width="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-4" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x2 - beban tinggi pada source system" vertex="1">
+          <mxGeometry height="30" width="180" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-5" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 - Beban tinggi pada target" vertex="1">
+          <mxGeometry height="40" width="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-7" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x4 - Resource Utilization" vertex="1">
+          <mxGeometry height="30" width="180" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Teknik incremental" vertex="1">
+          <mxGeometry height="170" width="180" x="647" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-9" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x1 → y1 - Change Data Capture (CDC)" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-10" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x2 → y2 - Log-based CDC" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-11" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 → y3 - Flagging column" vertex="1">
+          <mxGeometry height="40" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-39" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 → y3 - Flagging column" vertex="1">
+          <mxGeometry height="40" width="180" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-16" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HItt3-mscEdxbNLNS69Q-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kenapa&amp;nbsp;&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 400; font-style: normal; font-kerning: none;&quot;&gt; Full load&lt;/span&gt;&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none white-space-prewrap&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 400; font-style: normal; font-kerning: none;&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 400; font-style: normal; font-kerning: none;&quot;&gt;menghambat skalabilitas operasional?&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="130" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-20" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HItt3-mscEdxbNLNS69Q-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 400; font-style: normal; font-kerning: none;&quot;&gt;Faktor apa yang membuat Full load tidak skalabel? (&lt;/span&gt;&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 700; font-style: normal; font-kerning: none;&quot;&gt;RQ1&lt;/span&gt;&lt;span class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot; style=&quot;color: rgba(0,0,0,var(--O42jJQ,1)); caret-color: rgb(0, 0, 0); --Ys-XuQ: none; font-weight: 400; font-style: normal; font-kerning: none;&quot;&gt;)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="130" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-17" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.013;entryY=0.181;entryDx=0;entryDy=0;entryPerimeter=0;" target="HItt3-mscEdxbNLNS69Q-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Jawaban RQ1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="460" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;Bagaimana kita mengatasi&lt;/div&gt;&lt;div&gt;hambatan ini?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="140" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;Bisakah Incremental load&lt;/div&gt;&lt;div&gt;menjadi alternatif?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="120" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-22" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.563;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" target="HItt3-mscEdxbNLNS69Q-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-23" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;&lt;b&gt;Sejumlah faktor yang&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;menghambat skalabilitas&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="180" x="100" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-24" parent="HItt3-mscEdxbNLNS69Q-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x1 - Data Volume Growth" vertex="1">
+          <mxGeometry height="30" width="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-25" parent="HItt3-mscEdxbNLNS69Q-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x2 - Update Frequency" vertex="1">
+          <mxGeometry height="30" width="180" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-26" parent="HItt3-mscEdxbNLNS69Q-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 - Transformation Complexity" vertex="1">
+          <mxGeometry height="40" width="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-27" parent="HItt3-mscEdxbNLNS69Q-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x4 - Resource Utilization" vertex="1">
+          <mxGeometry height="30" width="180" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-29" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-7" style="endArrow=classic;html=1;rounded=0;startSize=8;strokeWidth=3;exitX=0.411;exitY=1.12;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.01;entryY=0.079;entryDx=0;entryDy=0;entryPerimeter=0;" target="HItt3-mscEdxbNLNS69Q-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="430" as="sourcePoint" />
+            <mxPoint x="320" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-33" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HItt3-mscEdxbNLNS69Q-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Bisakah Incremental load&lt;/div&gt;&lt;div&gt;mengatasi faktor ini?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="340" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-31" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HItt3-mscEdxbNLNS69Q-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Metode apa yang&lt;/div&gt;&lt;div&gt;bisa dipakai?(&lt;b&gt;RQ2&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="360" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-35" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=-0.071;entryDx=0;entryDy=0;entryPerimeter=0;" target="HItt3-mscEdxbNLNS69Q-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=15;" value="CS Research field" vertex="1">
+          <mxGeometry height="30" width="140" x="120" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="HItt3-mscEdxbNLNS69Q-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=15;" value="IS Research field" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
