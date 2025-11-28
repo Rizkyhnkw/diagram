@@ -1,0 +1,189 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="Research Model" id="x5nifbOcN7b8T0h7y2bK">
+        <mxGraphModel dx="1426" dy="881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Title -->
+                <mxCell id="title" value="RESEARCH MODEL - Incremental ETL Pipeline Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="300" y="20" width="400" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Data Warehouse System -->
+                <mxCell id="dw_system" value="Data Warehouse Processing System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="80" width="300" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- Business Questions Section -->
+                <mxCell id="business_section" value="Business Questions / IS Research Field" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="170" width="350" height="200" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="business_label" value="Business Questions:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="business_section">
+                    <mxGeometry x="20" y="30" width="120" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="q1" value="• Mengapa pemrosesan data warehouse lambat?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
+                    <mxGeometry x="30" y="55" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="q2" value="• Faktor-faktor apa yang mempengaruhi kinerja ETL?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
+                    <mxGeometry x="30" y="75" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="q3" value="• Bisakah proses ETL dioptimasi?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
+                    <mxGeometry x="30" y="95" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="q4" value="• Bagaimana mengoptimasi pemrosesan incremental?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="business_section">
+                    <mxGeometry x="30" y="115" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- RQ 1 -->
+                <mxCell id="rq1" value="RQ 1: Identifikasi Faktor Kinerja ETL" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="400" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- RQ 1 Answer -->
+                <mxCell id="rq1_answer" value="Faktor-faktor Kinerja:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="450" y="380" width="100" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="factor1" value="x1 - Data Volume Growth" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="405" width="150" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="factor2" value="x2 - Update Frequency" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="425" width="150" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="factor3" value="x3 - Transformation Complexity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="445" width="150" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="factor4" value="x4 - Resource Utilization" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="465" width="150" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="factor_n" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="485" width="150" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Technology Questions Section -->
+                <mxCell id="tech_section" value="Technology Questions / CS Research Field" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="170" width="350" height="200" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tech_label" value="Technology Questions:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="tech_section">
+                    <mxGeometry x="20" y="30" width="140" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tq1" value="• Dapatkah Incremental ETL mengatasi faktor ini?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
+                    <mxGeometry x="30" y="55" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tq2" value="• Teknik apa yang efektif untuk setiap faktor?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
+                    <mxGeometry x="30" y="75" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tq3" value="• Bagaimana implementasi pipeline optimal?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tech_section">
+                    <mxGeometry x="30" y="95" width="280" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- RQ 2 -->
+                <mxCell id="rq2" value="RQ 2: Evaluasi Teknik Incremental ETL" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="550" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- RQ 2 Answer -->
+                <mxCell id="rq2_answer" value="Pemetaan Teknik Optimasi:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="450" y="530" width="130" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tech1" value="x1 → y1 - Change Data Capture (CDC)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="555" width="200" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tech2" value="x2 → y2 - Micro-batch Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="575" width="200" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tech3" value="x3 → y3 - Incremental Transformation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="595" width="200" height="20" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tech_n" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="615" width="200" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- RQ 3 -->
+                <mxCell id="rq3" value="RQ 3: Analisis Kinerja &amp; Optimasi" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="700" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- Final Output -->
+                <mxCell id="output" value="Optimized Data Warehouse Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="820" width="300" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- Arrows/Connections -->
+                <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="dw_system" target="business_section">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="140" as="sourcePoint"/>
+                        <mxPoint x="550" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="business_section" target="rq1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="270" y="370" as="sourcePoint"/>
+                        <mxPoint x="300" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq1" target="rq2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="480" as="sourcePoint"/>
+                        <mxPoint x="300" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq2" target="rq3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="630" as="sourcePoint"/>
+                        <mxPoint x="300" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rq3" target="output">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="780" as="sourcePoint"/>
+                        <mxPoint x="500" y="820" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn6" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="rq1" target="factor1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="440" as="sourcePoint"/>
+                        <mxPoint x="450" y="415" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn7" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="tech_section" target="rq2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="600" y="370" as="sourcePoint"/>
+                        <mxPoint x="400" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="conn8" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="rq2" target="tech1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="590" as="sourcePoint"/>
+                        <mxPoint x="450" y="565" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
