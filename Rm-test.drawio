@@ -8,7 +8,7 @@
           <mxGeometry height="40" width="400" x="230" y="70" as="geometry" />
         </mxCell>
         <mxCell id="HItt3-mscEdxbNLNS69Q-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;&lt;b&gt;Sejumlah faktor yang&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;menghambat skalabilitas&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="180" x="430" y="240" as="geometry" />
+          <mxGeometry height="180" width="180" x="430" y="240" as="geometry" />
         </mxCell>
         <mxCell id="HItt3-mscEdxbNLNS69Q-3" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x1 - Data Volume Growth" vertex="1">
           <mxGeometry height="30" width="180" y="40" as="geometry" />
@@ -19,8 +19,8 @@
         <mxCell id="HItt3-mscEdxbNLNS69Q-5" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 - Beban tinggi pada target" vertex="1">
           <mxGeometry height="40" width="180" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="HItt3-mscEdxbNLNS69Q-7" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x4 - Resource Utilization" vertex="1">
-          <mxGeometry height="30" width="180" y="140" as="geometry" />
+        <mxCell id="HItt3-mscEdxbNLNS69Q-7" parent="HItt3-mscEdxbNLNS69Q-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x4 -&amp;nbsp;&lt;span&gt;Meningkatkan Risiko Kegagalan dan Biaya Retry&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="180" y="140" as="geometry" />
         </mxCell>
         <mxCell id="HItt3-mscEdxbNLNS69Q-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Teknik incremental" vertex="1">
           <mxGeometry height="170" width="180" x="647" y="670" as="geometry" />
@@ -34,7 +34,7 @@
         <mxCell id="HItt3-mscEdxbNLNS69Q-11" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 → y3 - Flagging column" vertex="1">
           <mxGeometry height="40" width="180" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="HItt3-mscEdxbNLNS69Q-39" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x3 → y3 - Flagging column" vertex="1">
+        <mxCell id="HItt3-mscEdxbNLNS69Q-39" parent="HItt3-mscEdxbNLNS69Q-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="x4 → y4 - Trigger-based" vertex="1">
           <mxGeometry height="40" width="180" y="130" as="geometry" />
         </mxCell>
         <mxCell id="HItt3-mscEdxbNLNS69Q-16" edge="1" parent="1" source="HItt3-mscEdxbNLNS69Q-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HItt3-mscEdxbNLNS69Q-15">
