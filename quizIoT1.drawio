@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="mM2cwDcU_zMVaCUEu39a">
+    <mxGraphModel dx="1360" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BarCcAYhTD2_reYdzhh1-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI JARINGAN (Cloud/IoT)&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="360" width="490" x="30" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI OUTPUT (Aktuasi)&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="359" width="448" x="562" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI ProCESSING (Edge/Mikrokontroler)&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="457" width="536" x="308" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontStyle=1;fontSize=15;" value=";&amp;;SEKSI INPUT (Sensing);" vertex="1">
+          <mxGeometry height="160" width="560.5" x="289.5" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Custom Soil Moisture Sensor&#xa;(Simulasi Kelembaban Tanah)" vertex="1">
+          <mxGeometry height="126" width="260" x="465" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-6" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="ESP32 DevKit V1&#xa;(Unit Pemroses Pusat)" vertex="1">
+          <mxGeometry height="63" width="243" x="222" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Modul ADC Internal&#xa;(Pin 34)" vertex="1">
+          <mxGeometry height="78" width="200" x="488" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Algoritma Keputusan&#xa;(Threshold: ADC &amp;lt; 1500)" vertex="1">
+          <mxGeometry height="78" width="246" x="465" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-9" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="GPIO Digital&#xa;(Pin 27)" vertex="1">
+          <mxGeometry height="78" width="149" x="750" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-10" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Modul Relay 1-Channel&#xa;(Sakelar Elektronik)" vertex="1">
+          <mxGeometry height="78" width="227" x="670" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Pompa Air DC / LED&#xa;(Aktuator Irigasi)" vertex="1">
+          <mxGeometry height="78" width="207" x="670" y="1066" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-12" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Modul WiFi Internal" vertex="1">
+          <mxGeometry height="54" width="198" x="132.5" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-13" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="IoT Cloud Platform&#xa;(Dashboard Monitoring)" vertex="1">
+          <mxGeometry height="108" width="183" x="140" y="1051" as="geometry" />
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-14" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-5" style="curved=1;startArrow=none;endArrow=block;strokeColor=#01579b;strokeWidth=3;fillColor=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-7" value="Sinyal Analog">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-15" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-7" style="curved=1;startArrow=none;endArrow=block;strokeColor=#01579b;strokeWidth=3;fillColor=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-8" value="Konversi Digital 0-4095">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-16" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-8" style="curved=1;startArrow=none;endArrow=block;strokeColor=#01579b;strokeWidth=3;fillColor=none;;exitX=0.76;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-9" value="Instruksi Menyiram">
+          <mxGeometry relative="1" x="0.3362" y="25" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="710" y="562" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-17" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-9" style="curved=1;startArrow=none;endArrow=block;strokeColor=#01579b;strokeWidth=3;fillColor=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-10" value="Sinyal HIGH/LOW">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-18" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-10" style="curved=1;startArrow=none;endArrow=block;strokeColor=#01579b;strokeWidth=3;fillColor=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-11" value="Arus Listrik Terhubung/Terputus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-19" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-8" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.17;exitY=1;entryX=1;entryY=0.07;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-12" value="Payload Telemetri">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="429" y="562" />
+              <mxPoint x="429" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BarCcAYhTD2_reYdzhh1-20" edge="1" parent="1" source="BarCcAYhTD2_reYdzhh1-12" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;startSize=8;endSize=8;fontStyle=1" target="BarCcAYhTD2_reYdzhh1-13" value="Protokol MQTT/HTTP">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
