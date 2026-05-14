@@ -1,19 +1,19 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="mM2cwDcU_zMVaCUEu39a">
-    <mxGraphModel dx="1360" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1443" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BarCcAYhTD2_reYdzhh1-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI JARINGAN (Cloud/IoT)&amp;nbsp;&amp;nbsp;" vertex="1">
+        <mxCell id="BarCcAYhTD2_reYdzhh1-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI JARINGAN (Cloud/IoT)&amp;nbsp;&amp;nbsp;" vertex="1">
           <mxGeometry height="360" width="490" x="30" y="820" as="geometry" />
         </mxCell>
-        <mxCell id="BarCcAYhTD2_reYdzhh1-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI OUTPUT (Aktuasi)&amp;nbsp;&amp;nbsp;" vertex="1">
+        <mxCell id="BarCcAYhTD2_reYdzhh1-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI OUTPUT (Aktuasi)&amp;nbsp;&amp;nbsp;" vertex="1">
           <mxGeometry height="359" width="448" x="562" y="821" as="geometry" />
         </mxCell>
-        <mxCell id="BarCcAYhTD2_reYdzhh1-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="&amp;nbsp;&amp;nbsp;SEKSI ProCESSING (Edge/Mikrokontroler)&amp;nbsp;&amp;nbsp;" vertex="1">
+        <mxCell id="BarCcAYhTD2_reYdzhh1-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=16;fontStyle=1" value=";SEKSI PROCESSING (Edge/Mikrokontroler);" vertex="1">
           <mxGeometry height="457" width="536" x="308" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="BarCcAYhTD2_reYdzhh1-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontStyle=1;fontSize=15;" value=";&amp;;SEKSI INPUT (Sensing);" vertex="1">
+        <mxCell id="BarCcAYhTD2_reYdzhh1-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value=";&amp;;SEKSI INPUT (Sensing);" vertex="1">
           <mxGeometry height="160" width="560.5" x="289.5" y="80" as="geometry" />
         </mxCell>
         <mxCell id="BarCcAYhTD2_reYdzhh1-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=15;fontStyle=1" value="Custom Soil Moisture Sensor&#xa;(Simulasi Kelembaban Tanah)" vertex="1">
