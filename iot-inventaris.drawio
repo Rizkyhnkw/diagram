@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="40XGhAcoKkNDkqx56VQp">
-    <mxGraphModel dx="1008" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="736" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry height="128" width="330" x="40" y="1321" as="geometry" />
         </mxCell>
         <mxCell id="tNUIeM0YhY4SxMxhP2jz-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillOpacity=50;fontSize=16;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeOpacity=70;" value="4. Microservices &amp; Storage Layer in K8s" vertex="1">
-          <mxGeometry height="464" width="620" x="20" y="790" as="geometry" />
+          <mxGeometry height="464" width="580" x="20" y="790" as="geometry" />
         </mxCell>
         <mxCell id="tNUIeM0YhY4SxMxhP2jz-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillOpacity=50;fontSize=13;fontStyle=1;strokeOpacity=70;" value="3. Event Streaming Layer" vertex="1">
           <mxGeometry height="128" width="485" x="55" y="599" as="geometry" />
@@ -41,7 +41,7 @@
           <mxGeometry height="82" width="166" x="83" y="978" as="geometry" />
         </mxCell>
         <mxCell id="tNUIeM0YhY4SxMxhP2jz-13" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fillOpacity=50;fontSize=13;fontStyle=1;strokeOpacity=70;" value="Core Inventory DB: TimescaleDB" vertex="1">
-          <mxGeometry height="102" width="162" x="420" y="978" as="geometry" />
+          <mxGeometry height="102" width="162" x="390" y="1090" as="geometry" />
         </mxCell>
         <mxCell id="tNUIeM0YhY4SxMxhP2jz-14" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillOpacity=50;fontSize=13;fontStyle=1;strokeOpacity=70;" value="Notification Microservice: WebSockets" vertex="1">
           <mxGeometry height="78" width="260" x="55" y="1162" as="geometry" />
