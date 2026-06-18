@@ -1,0 +1,228 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="LOuCDkVCHlPkqrdTgXJO">
+    <mxGraphModel dx="901" dy="1320" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;graph TD\n    %% Dataset Raw\n    DataInput[Raw Macroeconomic Data&lt;br&gt;2010 - 2023] --&gt; Preprocessing[src/preprocessing.py&lt;br&gt;Log-Diff Stationarity &amp; Lagging]\n    \n    %% Split Data\n    Preprocessing --&gt; SplitTrain[Train Window&lt;br&gt;2010 - 2017]\n    Preprocessing --&gt; SplitInDist[In-Dist Test Window&lt;br&gt;2018 - 2019]\n    Preprocessing --&gt; SplitOOD_P1[OOD P1: COVID&lt;br&gt;2020 - 2021]\n    Preprocessing --&gt; SplitOOD_P2[OOD P2: Global Shock&lt;br&gt;2022 - 2023]\n\n    %% Alur Training\n    SplitTrain --&gt; TrainExecution[src/training.py]\n    TrainExecution --&gt; ModelSave[Save Frozen Artifacts&lt;br&gt;models/*.pkl]\n\n    %% Alur Inferensi (No Re-Fitting)\n    ModelSave --&gt; InferenceEngine[src/evaluation.py&lt;br&gt;Blind Inference Loop]\n    SplitInDist --&gt; InferenceEngine\n    SplitOOD_P1 --&gt; InferenceEngine\n    SplitOOD_P2 --&gt; InferenceEngine\n\n    %% Kalkulasi Metrik\n    InferenceEngine --&gt; MetricCalc{Hitung Error &amp; Ratio}\n    MetricCalc --&gt;|RMSE OOD P1 / RMSE In-Dist| FI_P1[Fragility Index P1]\n    MetricCalc --&gt;|RMSE OOD P2 / RMSE In-Dist| FI_P2[Fragility Index P2]\n\n    %% Output Final\n    FI_P1 --&gt; FinalMatrix[Matriks Luaran 2x2x2&lt;br&gt;output/metrics/final_matrix.csv]\n    FI_P2 --&gt; FinalMatrix\n    \n    style DataInput fill:#f9f,stroke:#333,stroke-width:2px\n    style ModelSave fill:#bbf,stroke:#333,stroke-width:2px\n    style FinalMatrix fill:#bfb,stroke:#333,stroke-width:2px&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="KP58w57MuDDBMLOlUST9-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=20;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Raw Macroeconomic Data&#xa;2010 - 2023" mermaidId="n:DataInput" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#f9f;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Raw Macroeconomic Data&#xa;2010 - 2023" id="KP58w57MuDDBMLOlUST9-2">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#f9f;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="248" x="400" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="src/preprocessing.py&#xa;Log-Diff Stationarity &amp; Lagging" mermaidId="n:Preprocessing" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="src/preprocessing.py&#xa;Log-Diff Stationarity &amp; Lagging" id="KP58w57MuDDBMLOlUST9-3">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="277" x="385" y="163" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Train Window&#xa;2010 - 2017" mermaidId="n:SplitTrain" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Train Window&#xa;2010 - 2017" id="KP58w57MuDDBMLOlUST9-4">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="157" x="68" y="286" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="In-Dist Test Window&#xa;2018 - 2019" mermaidId="n:SplitInDist" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="In-Dist Test Window&#xa;2018 - 2019" id="KP58w57MuDDBMLOlUST9-5">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="201" x="303" y="513" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="OOD P1: COVID&#xa;2020 - 2021" mermaidId="n:SplitOOD_P1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="OOD P1: COVID&#xa;2020 - 2021" id="KP58w57MuDDBMLOlUST9-6">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="180" x="554" y="513" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="OOD P2: Global Shock&#xa;2022 - 2023" mermaidId="n:SplitOOD_P2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="OOD P2: Global Shock&#xa;2022 - 2023" id="KP58w57MuDDBMLOlUST9-7">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="225" x="784" y="513" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="src/training.py" mermaidId="n:TrainExecution" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="src/training.py" id="KP58w57MuDDBMLOlUST9-8">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="160" x="67" y="409" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Save Frozen Artifacts&#xa;models/*.pkl" mermaidId="n:ModelSave" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#bbf;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Save Frozen Artifacts&#xa;models/*.pkl" id="KP58w57MuDDBMLOlUST9-9">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#bbf;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="213" x="40" y="513" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="src/evaluation.py&#xa;Blind Inference Loop" mermaidId="n:InferenceEngine" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="src/evaluation.py&#xa;Blind Inference Loop" id="KP58w57MuDDBMLOlUST9-10">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="207" x="420" y="636" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Hitung Error &amp; Ratio" mermaidId="n:MetricCalc" mermaidBaseStyle="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Hitung Error &amp; Ratio" id="KP58w57MuDDBMLOlUST9-11">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="245" width="245" x="401" y="759" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Fragility Index P1" mermaidId="n:FI_P1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Fragility Index P1" id="KP58w57MuDDBMLOlUST9-12">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="184" x="311" y="1073" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Fragility Index P2" mermaidId="n:FI_P2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Fragility Index P2" id="KP58w57MuDDBMLOlUST9-13">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="184" x="552" y="1073" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Matriks Luaran 2x2x2&#xa;output/metrics/final_matrix.csv" mermaidId="n:FinalMatrix" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#bfb;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Matriks Luaran 2x2x2&#xa;output/metrics/final_matrix.csv" id="KP58w57MuDDBMLOlUST9-14">
+          <mxCell parent="KP58w57MuDDBMLOlUST9-1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#bfb;strokeColor=#333;fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="275" x="386" y="1177" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:DataInput-&gt;Preprocessing#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-15">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:Preprocessing-&gt;SplitTrain#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.81;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-16">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.81;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="147" y="261" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:Preprocessing-&gt;SplitInDist#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.24;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-17">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.24;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="404" y="261" />
+                <mxPoint x="404" y="323" />
+                <mxPoint x="404" y="384" />
+                <mxPoint x="404" y="436" />
+                <mxPoint x="404" y="488" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:Preprocessing-&gt;SplitOOD_P1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.76;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-18">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.76;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="644" y="261" />
+                <mxPoint x="644" y="323" />
+                <mxPoint x="644" y="384" />
+                <mxPoint x="644" y="436" />
+                <mxPoint x="644" y="488" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:Preprocessing-&gt;SplitOOD_P2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.81;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-19">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.81;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="897" y="261" />
+                <mxPoint x="897" y="323" />
+                <mxPoint x="897" y="384" />
+                <mxPoint x="897" y="436" />
+                <mxPoint x="897" y="488" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:SplitTrain-&gt;TrainExecution#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-20">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:TrainExecution-&gt;ModelSave#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-21">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-9">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:ModelSave-&gt;InferenceEngine#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0;entryY=0.27;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-22">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-9" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0;entryY=0.27;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="147" y="611" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:SplitInDist-&gt;InferenceEngine#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.15;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-23">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.15;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="404" y="611" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:SplitOOD_P1-&gt;InferenceEngine#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.85;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-24">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.85;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="644" y="611" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:SplitOOD_P2-&gt;InferenceEngine#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.26;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-25">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.26;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="897" y="611" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:InferenceEngine-&gt;MetricCalc#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-26">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-10" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-11">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RMSE OOD P1 / RMSE In-Dist" mermaidId="e:MetricCalc-&gt;FI_P1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.12;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="RMSE OOD P1 / RMSE In-Dist" id="KP58w57MuDDBMLOlUST9-27">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-11" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.12;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="KP58w57MuDDBMLOlUST9-12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="403" y="1038" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RMSE OOD P2 / RMSE In-Dist" mermaidId="e:MetricCalc-&gt;FI_P2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.89;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="RMSE OOD P2 / RMSE In-Dist" id="KP58w57MuDDBMLOlUST9-28">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-11" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.89;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="KP58w57MuDDBMLOlUST9-13">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="644" y="1038" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:FI_P1-&gt;FinalMatrix#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.24;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-29">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-12" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.24;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="403" y="1152" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:FI_P2-&gt;FinalMatrix#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.76;entryY=0;" mermaidBaseValue="" id="KP58w57MuDDBMLOlUST9-30">
+          <mxCell edge="1" parent="KP58w57MuDDBMLOlUST9-1" source="KP58w57MuDDBMLOlUST9-13" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.76;entryY=0;rounded=0;fontSize=12;" target="KP58w57MuDDBMLOlUST9-14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="644" y="1152" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
