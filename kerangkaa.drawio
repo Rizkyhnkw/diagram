@@ -297,11 +297,8 @@
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="ML vs statistik(medeiros, 2021)" vertex="1">
           <mxGeometry height="37" width="194" x="105" y="-158" as="geometry" />
         </mxCell>
-        <mxCell id="dgeAp_EsLOwZ7FTMPexu-37" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Seberapa besar degradasi performa?" vertex="1">
-          <mxGeometry height="94" width="94" x="1394" y="-187" as="geometry" />
+          <mxGeometry height="94" width="94" x="1368" y="-187" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-35" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-12">
           <mxGeometry relative="1" as="geometry">
@@ -311,29 +308,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-41" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" value="RQ" vertex="1">
-          <mxGeometry height="30" width="120" x="1447" y="-235" as="geometry" />
+          <mxGeometry height="30" width="120" x="1421" y="-235" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-36" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dgeAp_EsLOwZ7FTMPexu-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Apakah fragility teramplifikasi pada t+1 &amp;amp; t+3?" vertex="1">
-          <mxGeometry height="94" width="94" x="1516" y="-186" as="geometry" />
+          <mxGeometry height="94" width="94" x="1490" y="-186" as="geometry" />
         </mxCell>
-        <mxCell id="dgeAp_EsLOwZ7FTMPexu-38" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-40" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1608.4705882352941" y="-24.294117647058783" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Model mana lebih robust?" vertex="1">
-          <mxGeometry height="94" width="94" x="1460" y="-80" as="geometry" />
+          <mxGeometry height="94" width="94" x="1462" y="-55" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="Hipothesis" vertex="1">
-          <mxGeometry height="30" width="120" x="1626" y="-235" as="geometry" />
+          <mxGeometry height="30" width="120" x="1599" y="-235" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H1: FI &amp;gt;1.0(degradasi)" vertex="1">
-          <mxGeometry height="44" width="163" x="1284" y="-6" as="geometry" />
+          <mxGeometry height="44" width="163" x="1226" y="-8" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H2: FI_t3 &amp;gt; FI_t1(amplifikasi)" vertex="1">
-          <mxGeometry height="44" width="163" x="1653" y="-168" as="geometry" />
+          <mxGeometry height="44" width="163" x="1626" y="-168" as="geometry" />
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H3: FI_ARIMAX != FI_RF" vertex="1">
           <mxGeometry height="44" width="163" x="1610" y="-50" as="geometry" />
@@ -372,6 +374,9 @@
         </mxCell>
         <mxCell id="dgeAp_EsLOwZ7FTMPexu-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="Gap" vertex="1">
           <mxGeometry height="30" width="120" x="1206" y="-232" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-39" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.571;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" target="dgeAp_EsLOwZ7FTMPexu-8">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
