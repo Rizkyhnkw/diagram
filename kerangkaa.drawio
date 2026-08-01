@@ -212,33 +212,60 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1Lyv57WFXgksXJc-KOGR" name="Page-2">
-    <mxGraphModel dx="198" dy="952" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="806" dy="970" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rqyFgtBE74dpZNewsQPn-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Seberapa besar degradasi performa?" vertex="1">
-          <mxGeometry height="94" width="94" x="155" y="27" as="geometry" />
+          <mxGeometry height="94" width="94" x="120" y="22" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="RQ" vertex="1">
-          <mxGeometry height="30" width="120" x="150" y="-38" as="geometry" />
+          <mxGeometry height="30" width="120" x="218" y="-29" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Apakah fragility teramplifikasi pada t+1 &amp;amp; t+3?" vertex="1">
-          <mxGeometry height="94" width="94" x="284" y="-18" as="geometry" />
+          <mxGeometry height="94" width="94" x="231" y="22" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Model mana lebih robust?" vertex="1">
-          <mxGeometry height="80" width="80" x="266" y="88" as="geometry" />
+          <mxGeometry height="94" width="94" x="338" y="22" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Hipothesis" vertex="1">
-          <mxGeometry height="30" width="120" x="244" y="253" as="geometry" />
+          <mxGeometry height="30" width="120" x="218" y="187" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H1: FI &amp;gt;1.0(degradasi)" vertex="1">
-          <mxGeometry height="44" width="132" x="174" y="300" as="geometry" />
+          <mxGeometry height="44" width="163" x="110" y="227" as="geometry" />
         </mxCell>
         <mxCell id="rqyFgtBE74dpZNewsQPn-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H2: FI_t3 &amp;gt; FI_t1(amplifikasi)" vertex="1">
-          <mxGeometry height="44" width="163" x="162" y="198" as="geometry" />
+          <mxGeometry height="44" width="163" x="284" y="227" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H2: FI_ARIMAX != FI_RF" vertex="1">
-          <mxGeometry height="44" width="163" x="238" y="338" as="geometry" />
+        <mxCell id="rqyFgtBE74dpZNewsQPn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H3: FI_ARIMAX != FI_RF" vertex="1">
+          <mxGeometry height="44" width="163" x="199" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-1" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="277.5" y="121" as="sourcePoint" />
+            <mxPoint x="277.5" y="173" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Metodologi" vertex="1">
+          <mxGeometry height="30" width="120" x="211" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ARIMAX vs RF" vertex="1">
+          <mxGeometry height="44" width="163" x="103" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fixed train, WFW no-refit" vertex="1">
+          <mxGeometry height="44" width="163" x="277" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DM test" vertex="1">
+          <mxGeometry height="27" width="163" x="103" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-13" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="277.5" y="336" as="sourcePoint" />
+            <mxPoint x="277.5" y="388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FI" vertex="1">
+          <mxGeometry height="27" width="163" x="277" y="484" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
