@@ -212,90 +212,166 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1Lyv57WFXgksXJc-KOGR" name="Page-2">
-    <mxGraphModel dx="1151" dy="1214" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="948" dy="1009" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="rqyFgtBE74dpZNewsQPn-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Seberapa besar degradasi performa?" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;" value="Seberapa besar degradasi performa?" vertex="1">
           <mxGeometry height="94" width="94" x="120" y="22" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="RQ" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" value="RQ" vertex="1">
           <mxGeometry height="30" width="120" x="218" y="-31" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Apakah fragility teramplifikasi pada t+1 &amp;amp; t+3?" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;" value="Apakah fragility teramplifikasi pada t+1 &amp;amp; t+3?" vertex="1">
           <mxGeometry height="94" width="94" x="231" y="22" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Model mana lebih robust?" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;" value="Model mana lebih robust?" vertex="1">
           <mxGeometry height="94" width="94" x="338" y="22" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Hipothesis" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="Hipothesis" vertex="1">
           <mxGeometry height="30" width="120" x="217.5" y="375" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H1: FI &amp;gt;1.0(degradasi)" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="H1: FI &amp;gt;1.0(degradasi)" vertex="1">
           <mxGeometry height="44" width="163" x="109.5" y="415" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H2: FI_t3 &amp;gt; FI_t1(amplifikasi)" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="H2: FI_t3 &amp;gt; FI_t1(amplifikasi)" vertex="1">
           <mxGeometry height="44" width="163" x="283.5" y="416" as="geometry" />
         </mxCell>
-        <mxCell id="rqyFgtBE74dpZNewsQPn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="H3: FI_ARIMAX != FI_RF" vertex="1">
+        <mxCell id="rqyFgtBE74dpZNewsQPn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="H3: FI_ARIMAX != FI_RF" vertex="1">
           <mxGeometry height="44" width="163" x="198.5" y="473" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-1" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-1" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;startSize=8;endSize=8;curved=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="277.5" y="121" as="sourcePoint" />
             <mxPoint x="277.5" y="173" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Metodologi" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="Metodologi" vertex="1">
           <mxGeometry height="30" width="120" x="224.5" y="185" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ARIMAX vs RF" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="ARIMAX vs RF" vertex="1">
           <mxGeometry height="44" width="163" x="109.5" y="226" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fixed train, WFW no-refit" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Fixed train, WFW no-refit" vertex="1">
           <mxGeometry height="44" width="163" x="283.5" y="226" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DM test" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="DM test" vertex="1">
           <mxGeometry height="27" width="163" x="109.5" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-13" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-13" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;startSize=8;endSize=8;curved=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="277.5" y="318" as="sourcePoint" />
             <mxPoint x="277.5" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FI" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="FI" vertex="1">
           <mxGeometry height="27" width="163" x="283.5" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="Literatur" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;fontSize=14;" value="Literatur" vertex="1">
           <mxGeometry height="30" width="120" x="131" y="-232" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-22" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-22" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;startSize=8;endSize=8;curved=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="191" y="-81" as="sourcePoint" />
             <mxPoint x="191" y="-29" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fragility(Taleb, 2007)" vertex="1">
-          <mxGeometry height="30" width="168" x="116" y="-185" as="geometry" />
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Fragility(Taleb, 2007)" vertex="1">
+          <mxGeometry height="30" width="168" x="116" y="-195" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tidak ada&amp;nbsp; OOD + fragility pada konteks prediksi inflasi Indonesia" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Tidak ada&amp;nbsp; OOD + fragility pada konteks prediksi inflasi Indonesia" vertex="1">
           <mxGeometry height="92" width="120" x="322" y="-185" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Distribution Shift(Gama, 2014)" vertex="1">
-          <mxGeometry height="30" width="168" x="116" y="-123" as="geometry" />
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Distribution Shift(Gama, 2014)" vertex="1">
+          <mxGeometry height="44" width="175" x="116" y="-114" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ML vs statistik(medeiros, 2021)" vertex="1">
-          <mxGeometry height="30" width="168" x="116" y="-155" as="geometry" />
-        </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Literatur" vertex="1">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="Gap" vertex="1">
           <mxGeometry height="30" width="120" x="322" y="-232" as="geometry" />
         </mxCell>
-        <mxCell id="smZsJCUJ3763OxHhCtnQ-29" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+        <mxCell id="smZsJCUJ3763OxHhCtnQ-29" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;startSize=8;endSize=8;curved=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="381.5" y="-87" as="sourcePoint" />
             <mxPoint x="381.5" y="-35" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="ML vs statistik(medeiros, 2021)" vertex="1">
+          <mxGeometry height="37" width="194" x="105" y="-158" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-37" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Seberapa besar degradasi performa?" vertex="1">
+          <mxGeometry height="94" width="94" x="1394" y="-187" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-35" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1507.06" y="-86.65" />
+              <mxPoint x="1272.47" y="-86.65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" value="RQ" vertex="1">
+          <mxGeometry height="30" width="120" x="1447" y="-235" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-36" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dgeAp_EsLOwZ7FTMPexu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Apakah fragility teramplifikasi pada t+1 &amp;amp; t+3?" vertex="1">
+          <mxGeometry height="94" width="94" x="1516" y="-186" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-38" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dgeAp_EsLOwZ7FTMPexu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;" value="Model mana lebih robust?" vertex="1">
+          <mxGeometry height="94" width="94" x="1460" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="Hipothesis" vertex="1">
+          <mxGeometry height="30" width="120" x="1626" y="-235" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H1: FI &amp;gt;1.0(degradasi)" vertex="1">
+          <mxGeometry height="44" width="163" x="1284" y="-6" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H2: FI_t3 &amp;gt; FI_t1(amplifikasi)" vertex="1">
+          <mxGeometry height="44" width="163" x="1653" y="-168" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="H3: FI_ARIMAX != FI_RF" vertex="1">
+          <mxGeometry height="44" width="163" x="1610" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="Metodologi" vertex="1">
+          <mxGeometry height="30" width="120" x="1025" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" value="ARIMAX vs RF" vertex="1">
+          <mxGeometry height="44" width="163" x="910" y="-39" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" value="Fixed train, WFW no-refit" vertex="1">
+          <mxGeometry height="44" width="163" x="1084" y="-39" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" value="DM test" vertex="1">
+          <mxGeometry height="27" width="163" x="910" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" value="FI" vertex="1">
+          <mxGeometry height="27" width="163" x="1084" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-33" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="dgeAp_EsLOwZ7FTMPexu-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=14;" value="Literatur" vertex="1">
+          <mxGeometry height="30" width="120" x="1020.5" y="-235" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;div&gt;&lt;b&gt;Fragility(Taleb, 2007)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;ML vs statistik(medeiros, 2021)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Distribution Shift(Gama, 2014)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="83" width="203.5" x="978.75" y="-195" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" value="Tidak ada&amp;nbsp; OOD + fragility pada konteks prediksi inflasi Indonesia" vertex="1">
+          <mxGeometry height="92" width="120" x="1206" y="-192" as="geometry" />
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-34" edge="1" parent="1" source="dgeAp_EsLOwZ7FTMPexu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1468.4705882352941" y="-217.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dgeAp_EsLOwZ7FTMPexu-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="Gap" vertex="1">
+          <mxGeometry height="30" width="120" x="1206" y="-232" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
